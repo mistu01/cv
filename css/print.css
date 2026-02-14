@@ -1,0 +1,261 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    @page {
+        margin: 0;
+        size: auto;
+    }
+
+    html, body {
+        width: 210mm;
+        margin: 0 auto;
+        background: white !important;
+        font-size: 10pt;
+        line-height: 1.35;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    body {
+        background: white !important;
+    }
+
+    .print-btn,
+    .action-buttons {
+        display: none !important;
+    }
+
+    .profile-image {
+        display: none !important;
+    }
+
+    .cv-header {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2a4a6f 100%) !important;
+        padding: 18px 20px 14px !important;
+    }
+
+    .cv-header::before,
+    .cv-header::after {
+        display: none !important;
+    }
+
+    .header-content::after {
+        content: '' !important;
+        display: block !important;
+        width: 40px;
+        height: 2px;
+        background: #e85d4c !important;
+        margin: 10px auto 0 !important;
+    }
+
+    .cv-header h1 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: white !important;
+        font-size: 24pt !important;
+        text-shadow: none !important;
+        margin-bottom: 2px !important;
+    }
+
+    .cv-header .titles {
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-size: 10pt !important;
+        margin-bottom: 12px !important;
+    }
+
+    .contact-info {
+        gap: 0 !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+    }
+
+    .contact-item {
+        font-family: Arial, Helvetica, sans-serif !important;
+        background: none !important;
+        color: white !important;
+        padding: 2px 8px !important;
+        backdrop-filter: none !important;
+        border-radius: 0 !important;
+        font-size: 8pt !important;
+        border-right: 1px solid rgba(255,255,255,0.3) !important;
+    }
+
+    .contact-item:last-child {
+        border-right: none !important;
+    }
+
+    .contact-item .icon {
+        color: #e85d4c !important;
+    }
+
+    .cv-main {
+        padding: 15px 20px !important;
+    }
+
+    .cv-section {
+        border: none !important;
+        box-shadow: none !important;
+        margin-bottom: 12px !important;
+        border-left: 3px solid #e85d4c !important;
+    }
+
+    .cv-section::before {
+        display: none !important;
+    }
+
+    .cv-section h2 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        background: #f5f7fa !important;
+        padding: 8px 14px !important;
+        font-size: 10pt !important;
+        border-bottom: 1px solid #e0e4e8 !important;
+        color: #1e3a5f !important;
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .cv-section > p {
+        font-family: Arial, Helvetica, sans-serif !important;
+        padding: 10px 14px !important;
+        font-size: 9pt !important;
+        color: #4a4a68 !important;
+    }
+
+    .experience-item,
+    .education-item {
+        font-family: Arial, Helvetica, sans-serif !important;
+        padding: 8px 14px !important;
+        border-bottom: 1px solid #e8eaf0 !important;
+    }
+
+    .experience-item:hover {
+        background: none !important;
+    }
+
+    .job-header {
+        margin-bottom: 5px !important;
+    }
+
+    .job-header h3 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 10pt !important;
+        color: #1a1a2e !important;
+        margin-bottom: 2px !important;
+    }
+
+    .job-header .company {
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: #e85d4c !important;
+        font-weight: 600 !important;
+        font-size: 9pt !important;
+        margin-right: 6px !important;
+    }
+
+    .job-header .date {
+        font-family: Arial, Helvetica, sans-serif !important;
+        background: #f0f2f5 !important;
+        color: #666 !important;
+        font-size: 8pt !important;
+        padding: 2px 6px !important;
+    }
+
+    .experience-item ul {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .experience-item ul li {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 8.5pt !important;
+        color: #4a4a68 !important;
+        margin-bottom: 2px !important;
+        padding-left: 12px !important;
+    }
+
+    .experience-item ul li::before {
+        background: #e85d4c !important;
+        width: 4px !important;
+        height: 4px !important;
+        top: 5px !important;
+    }
+
+    .education-item h3 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 9pt !important;
+        margin-bottom: 2px !important;
+    }
+
+    .education-item .institution {
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: #e85d4c !important;
+        font-size: 9pt !important;
+        margin-right: 6px !important;
+    }
+
+    .education-item .date {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 8pt !important;
+    }
+
+    .skills-category {
+        font-family: Arial, Helvetica, sans-serif !important;
+        padding: 8px 14px !important;
+        border-bottom: 1px solid #e8eaf0 !important;
+    }
+
+    .skills-category h3 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 9pt !important;
+        color: #1e3a5f !important;
+        margin-bottom: 5px !important;
+    }
+
+    .skills-tags {
+        gap: 4px !important;
+    }
+
+    .skill-tag {
+        font-family: Arial, Helvetica, sans-serif !important;
+        padding: 2px 6px !important;
+        font-size: 7pt !important;
+        background: #f0f2f5 !important;
+        color: #4a4a68 !important;
+        border: 1px solid #d0d4d8 !important;
+        border-radius: 6px !important;
+    }
+
+    .skill-tag:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .languages-list {
+        font-family: Arial, Helvetica, sans-serif !important;
+        padding: 8px 14px !important;
+    }
+
+    .languages-list li {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 8.5pt !important;
+        color: #4a4a68 !important;
+        padding: 4px 0 !important;
+    }
+
+    .languages-list li::before {
+        background: #e85d4c !important;
+        width: 6px !important;
+        height: 6px !important;
+    }
+
+    .languages-list li strong {
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: #1e3a5f !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+}
