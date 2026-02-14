@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const printBtn = document.querySelector('.print-btn');
+    const printBtn = document.querySelector('button.print-btn');
     
     printBtn.addEventListener('click', function() {
         window.print();
